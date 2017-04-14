@@ -6,6 +6,16 @@ var name = 'Tyler';
 
   //Code Here
 
+
+function isTyler(name){
+
+  if (name == "Tyler") {
+  return true;
+} else {
+  return false;
+}
+}
+
 //////////////////PROBLEM 2////////////////////
 
 
@@ -14,6 +24,13 @@ var name = 'Tyler';
 
   //Code Here
 
+function getName(){
+
+  var name = prompt("What is your name?", '');
+  
+  return name;
+  
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -25,6 +42,20 @@ var name = 'Tyler';
   //Code Here
 
 
+function welcome() {
+
+var name = getName();
+
+alert("Welcome, " + name);
+
+}
+
+welcome();
+
+
+
+
+
 //////////////////PROBLEM 4////////////////////
 
 
@@ -34,6 +65,7 @@ var name = 'Tyler';
 
   //Answer Here
 
+// An argument is the actual value that is passed to the function, when it is invoked. A parameter is what holds an argument that is in return held by the function.
 
 //////////////////PROBLEM 5////////////////////
 
@@ -44,7 +76,9 @@ var name = 'Tyler';
 
   //Answer Here
 
+// false - null - undefined - 0 - NaN - '' - "" - (document.all) [1]
 
+//Eveluate it in Boolean context.
 
 //////////////////PROBLEM 6////////////////////
 
@@ -54,15 +88,24 @@ var name = 'Tyler';
 
   //Code Here
   
+function myName(me){
+  
+  var me = "Jnr";
 
+  return me;
+}
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
 
+var newMyName = myName;
+
 //Now alert the result of invoking newMyName
 
 
+
+alert(newMyName());
 
 //////////////////PROBLEM 7////////////////////
 
@@ -72,8 +115,19 @@ var name = 'Tyler';
 
   //Code Here
 
+function outerFn(){
+
+return(newMyName)
+
+}
+
 //Now save the result of invoking outerFn into a variable called innerFn.
+
+var innerFn = newMyName;
 
   //Code Here
 
 //Now invoke innerFn.
+
+innerFn();
+
